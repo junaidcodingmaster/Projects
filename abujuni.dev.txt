@@ -1,0 +1,51 @@
+;;
+;; Domain:     abujuni.dev.
+;; Exported:   2022-08-17 16:54:17
+;;
+;; This file is intended for use for informational and archival
+;; purposes ONLY and MUST be edited before use on a production
+;; DNS server.  In particular, you must:
+;;   -- update the SOA record with the correct authoritative name server
+;;   -- update the SOA record with the contact e-mail address information
+;;   -- update the NS record(s) with the authoritative name servers for this domain.
+;;
+;; For further information, please consult the BIND documentation
+;; located on the following website:
+;;
+;; http://www.isc.org/
+;;
+;; And RFC 1035:
+;;
+;; http://www.ietf.org/rfc/rfc1035.txt
+;;
+;; Please note that we do NOT offer technical support for any use
+;; of this zone data, the BIND name server, or any other third-party
+;; DNS software.
+;;
+;; Use at your own risk.
+;; SOA Record
+abujuni.dev	3600	IN	SOA	abujuni.dev root.abujuni.dev 2041242185 7200 3600 86400 3600
+
+;; A Records
+abujuni.dev.	1	IN	A	216.239.38.21
+abujuni.dev.	1	IN	A	216.239.36.21
+abujuni.dev.	1	IN	A	216.239.34.21
+abujuni.dev.	1	IN	A	216.239.32.21
+
+;; AAAA Records
+abujuni.dev.	1	IN	AAAA	2001:4860:4802:38::15
+abujuni.dev.	1	IN	AAAA	2001:4860:4802:36::15
+abujuni.dev.	1	IN	AAAA	2001:4860:4802:34::15
+abujuni.dev.	1	IN	AAAA	2001:4860:4802:32::15
+
+;; CNAME Records
+apps.abujuni.dev.	1	IN	CNAME	apps.abujuni.dev.ghs.googlehosted.com.
+_domainconnect.abujuni.dev.	1	IN	CNAME	connect.domains.google.com.
+www.abujuni.dev.	1	IN	CNAME	ghs.googlehosted.com.
+
+;; MX Records
+abujuni.dev.	1	IN	MX	40 alt4.gmr-smtp-in.l.google.com.
+abujuni.dev.	1	IN	MX	30 alt3.gmr-smtp-in.l.google.com.
+abujuni.dev.	1	IN	MX	20 alt2.gmr-smtp-in.l.google.com.
+abujuni.dev.	1	IN	MX	10 alt1.gmr-smtp-in.l.google.com.
+abujuni.dev.	1	IN	MX	5 gmr-smtp-in.l.google.com.
